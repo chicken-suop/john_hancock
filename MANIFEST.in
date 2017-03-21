@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include john_hancock *.css
+recursive-include john_hancock *.csv
+recursive-include john_hancock *.html
+recursive-include john_hancock *.ico
+recursive-include john_hancock *.js
+recursive-include john_hancock *.json
+recursive-include john_hancock *.md
+recursive-include john_hancock *.png
+recursive-include john_hancock *.py
+recursive-include john_hancock *.svg
+recursive-include john_hancock *.txt
+recursive-exclude john_hancock *.pyc
