@@ -118,7 +118,7 @@
  "max_attachments": 0, 
  "modified": "2017-03-09 05:33:59.437066", 
  "modified_by": "Administrator", 
- "module": "ERPNext_plus_Signaturit", 
+ "module": "john_hancock", 
  "name": "Contract Template", 
  "name_case": "", 
  "owner": "Administrator", 

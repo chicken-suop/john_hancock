@@ -380,7 +380,7 @@
  "max_attachments": 0, 
  "modified": "2017-03-14 20:58:55.110660", 
  "modified_by": "Administrator", 
- "module": "ERPNext_plus_Signaturit", 
+ "module": "john_hancock", 
  "name": "Contract", 
  "name_case": "", 
  "owner": "Administrator", 

@@ -170,7 +170,7 @@
  "max_attachments": 0, 
  "modified": "2017-03-14 21:10:41.311988", 
  "modified_by": "Administrator", 
- "module": "ERPNext_plus_Signaturit", 
+ "module": "john_hancock", 
  "name": "ERPNext plus Signaturit Settings", 
  "name_case": "", 
  "owner": "Administrator", 

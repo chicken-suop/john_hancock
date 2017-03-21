@@ -54,7 +54,7 @@
  "max_attachments": 0, 
  "modified": "2017-03-08 01:39:23.671103", 
  "modified_by": "Administrator", 
- "module": "ERPNext_plus_Signaturit", 
+ "module": "john_hancock", 
  "name": "Signature Term", 
  "name_case": "", 
  "owner": "Administrator", 

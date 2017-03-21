@@ -171,7 +171,7 @@
  "max_attachments": 0, 
  "modified": "2017-03-07 03:38:02.730056", 
  "modified_by": "Administrator", 
- "module": "ERPNext_plus_Signaturit", 
+ "module": "john_hancock", 
  "name": "Inbox", 
  "name_case": "", 
  "owner": "Administrator", 
