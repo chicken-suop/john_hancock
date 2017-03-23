@@ -9,7 +9,7 @@ app_description = "Are you in the market for a new signature app??? \n Well, gue
 app_icon = "octicon octicon-checklist"
 app_color = "red"
 app_email = "elliot.schep@gmail.com"
-app_license = "MIT"
+app_license = ""
 
 # Includes in <head>
 # ------------------
@@ -38,7 +38,7 @@ app_license = "MIT"
 
 # website user home page (by Role)
 # role_home_page = {
-#	"Role": "home_page"
+#   "Role": "home_page"
 # }
 
 # Website user home page (by function)
@@ -67,11 +67,11 @@ app_license = "MIT"
 # Permissions evaluated in scripted ways
 
 # permission_query_conditions = {
-# 	"Event": "frappe.desk.doctype.event.event.get_permission_query_conditions",
+#   "Event": "frappe.desk.doctype.event.event.get_permission_query_conditions",
 # }
 #
 # has_permission = {
-# 	"Event": "frappe.desk.doctype.event.event.has_permission",
+#   "Event": "frappe.desk.doctype.event.event.has_permission",
 # }
 
 # Document Events
@@ -79,27 +79,27 @@ app_license = "MIT"
 # Hook on document methods and events
 
 # doc_events = {
-# 	"*": {
-# 		"on_update": "method",
-# 		"on_cancel": "method",
-# 		"on_trash": "method"
-#	}
+#   "*": {
+#       "on_update": "method",
+#       "on_cancel": "method",
+#       "on_trash": "method"
+#   }
 # }
 
 # Scheduled Tasks
 # ---------------
 
-scheduler_events = {
-	"hourly": [
-		"john_hancock.tasks.update_hourly"
-	],
-	"daily": [
-		"john_hancock.task.update_daily"
-	],
-	"weekly": [
-		"john_hancock.task.update_weekly"
-	],
-}
+# scheduler_events = {
+#     "hourly": [
+#         "john_hancock.tasks.update_hourly"
+#     ],
+#     "daily": [
+#         "john_hancock.task.update_daily"
+#     ],
+#     "weekly": [
+#         "john_hancock.task.update_weekly"
+#     ],
+# }
 
 # Testing
 # -------
@@ -110,6 +110,5 @@ scheduler_events = {
 # ------------------------------
 #
 # override_whitelisted_methods = {
-# 	"frappe.desk.doctype.event.event.get_events": "john_hancock.event.get_events"
+#   "frappe.desk.doctype.event.event.get_events": "john_hancock.event.get_events"
 # }
-
