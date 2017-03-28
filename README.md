@@ -2,11 +2,6 @@
 
 The best amalgamation of eSigning software, EVER!
 
-#### License
-
-
-
-
 #### How to install
 
 
