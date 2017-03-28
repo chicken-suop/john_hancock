@@ -16,3 +16,5 @@ The best amalgamation of eSigning software, EVER!
 3) Install John Hancock
 
 	```bench install-app john_hancock```
+	or
+	```bench --site {your_site} install-app john_hancock```
