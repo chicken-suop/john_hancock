@@ -6,7 +6,7 @@ def get_data():
 		{
 			"module_name": "John Hancock",
 			"color": "red",
-			"icon": "octicon octicon-checklist",
+			"icon": "assets/images/john_hancock.png", # octicon octicon-checklist
 			"type": "module",
 			"label": "John Hancock"
 		}
