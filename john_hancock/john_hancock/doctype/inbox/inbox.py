@@ -7,12 +7,12 @@ import frappe
 from frappe.model.document import Document
 
 class Inbox(Document):
-	
-	def validate(self):
-		from signaturit_sdk.signaturit_client import SignaturitClient
+	pass
+	# def validate(self):
+	# 	from signaturit_sdk.signaturit_client import SignaturitClient
 
-		conn = SignaturitClient(self.signaturit_oauth_token)
-		try:
-			conn.create_signature("", "", "")
-		except:
-			frappe.throw("Your OAuth Token isn't correct.")
+	# 	conn = SignaturitClient(self.token)
+	# 	try:
+	# 		conn.create_signature("", "", "")
+	# 	except:
+	# 		frappe.throw("Your OAuth Token isn't correct.")

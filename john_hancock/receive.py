@@ -12,8 +12,8 @@ def update_weekly():
 
 
 def inbox_if(freq):
-    if frappe.utils.cint(frappe.db.get_value("ERPNext plus Signaturit Settings", None, "enable")):
-        if freq == frappe.db.get_value("ERPNext plus Signaturit Settings", None, "frequency"):
+    if frappe.utils.cint(frappe.db.get_value("John Hancock Settings", None, "enable")):
+        if freq == frappe.db.get_value("John Hancock Settings", None, "frequency"):
             inbox()
 
 @frappe.whitelist()
@@ -26,7 +26,7 @@ def check():
 def inbox():
     from signaturit_sdk.signaturit_client import SignaturitClient
     # Get data from signaturit using special ID:
-    response = SignaturitClient(frappe.db.sql("SELECT MIN(signaturit_oauth_token) FROM `tabERPNext plus Signaturit Settings`;")[0][0]).get_signatures()
+    response = SignaturitClient(frappe.db.sql("SELECT MIN(token) FROM `tabJohn Hancock Settings`;")[0][0]).get_signatures()
     tabInbox_values = []
 
     # frappe.errprint(response)
@@ -42,5 +42,6 @@ def inbox():
                         else:
                             tabInbox_values.append(data["documents"][0][key])
             # Insert into frappe database for inbox doctype a new row
+            frappe.errprint(tabInbox_values)
             frappe.db.sql("INSERT INTO tabInbox (id, name, status, recipients, date, document_title) VALUES ({}, '{}', '{}', '{}', '{}', '{}');".format(pos+1, *tabInbox_values))
             tabInbox_values = []

@@ -9,12 +9,12 @@ import pdfkit
 #   frappe.local.response.type = "download"
 
 @frappe.whitelist()
-def to_pdf(html, path="../apps/erpnext_plus_signaturit/erpnext_plus_signaturit/tmp/doc.pdf"):
+def to_pdf(html, path="../apps/john_hancock/john_hancock/tmp/doc.pdf"):
     pdfkit.from_string(html, path)
     return path
 
 # def save_pdf(bytes_data):
-#   file_path = "../apps/erpnext_plus_signaturit/erpnext_plus_signaturit/tmp/doc.pdf"
+#   file_path = "../apps/john_hancock/john_hancock/tmp/doc.pdf"
 
 #   with open(file_path, "wb") as f:
 #       f.write(bytes_data.encode('utf-8'))
@@ -33,4 +33,4 @@ def send(html, recipient, recipient_name, subject, body):
         "subject": subject,
         "body": body
     }
-    frappe.errprint(SignaturitClient(frappe.db.sql("SELECT MIN(signaturit_oauth_token) FROM `tabERPNext plus Signaturit Settings`;")[0][0]).create_signature(file_path, recipients, sign_params))
+    frappe.errprint(SignaturitClient(frappe.db.sql("SELECT MIN(token) FROM `tabJohn Hancock Settings`;")[0][0]).create_signature(file_path, recipients, sign_params))
