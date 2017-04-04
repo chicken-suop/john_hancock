@@ -1,5 +1,5 @@
 # John Hancock
-https://gitter.im/john_hancock
+(https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/john_hancock/?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 The best amalgamation of eSigning software, EVER!
 
